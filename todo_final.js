@@ -5,7 +5,6 @@ function listAllTodos() {
 		console.log(todoItems[i].id + " " + todoItems[i].text);
 	}
 }
-//module.exports=listAllTodos;
 
 /* This function will create a new todo object based on the
 text that was entered in the text input, and push it into
@@ -26,9 +25,6 @@ function addTodo(text, dueAtstr) {
 function testItems() {
 	return todoItems;
 }
-//add todoItem fucntion
-//console.log(addTodo('bla'));
-//console.log(addTodo('okay'));
 
 //list completed task
 
@@ -40,10 +36,6 @@ function completeList() {
 		console.log(completedItems[i].id + " " + completedItems[i].text);
 	}
 }
-//function returnCompletedItems() {
-//let completedItems = todoItems.filter((item) => item.checked === true);
-//return completedItems;
-//}
 
 //list uncompleted todos
 function uncompletedList() {
