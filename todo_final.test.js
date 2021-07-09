@@ -5,15 +5,15 @@ const removeTodo = test1.removeTodo;
 const completeList = test1.completeList;
 const uncompletedList = test1.uncompletedList;
 const todoItems = test1.todoItems;
-const testItems = test1.testItems;
+
+/* Runs before each test */
 beforeEach(() => {
-	/* Runs before each test */
 	clearAll();
-	//console.warn(test1.todoItems);
 });
 
 console.log(test1);
 
+///* Runs after each test */
 const originalLog = console.log;
 afterEach(() => {
 	console.log = originalLog;
@@ -57,7 +57,7 @@ test("remove an item", () => {
 test("clearing the todoItems array", () => {
 	todoItems.push(
 		{
-			text: "chololate",
+			text: "chocolate",
 			checked: true,
 			id: 1900,
 			createdAt: "3/20/2021",
